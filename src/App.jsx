@@ -4,11 +4,11 @@ import About from "./Components/About"
 export const CatagoryContext=createContext()
 
 function App() {
-const [count,setCount]=useState(0)
+const [catagory,SetCatagory]=useState('Laptop')
 
   return (
     <>
-      <CatagoryContext.Provider value={[count,setCount]} >
+      <CatagoryContext.Provider value={[catagory,SetCatagory]} >
       <Home/>
       <About/>
       </CatagoryContext.Provider>
